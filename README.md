@@ -44,6 +44,52 @@ python infer.py
 # ]
 ```
 
+### Library
+
+To make thing easier to access, we made publish a simple library called `khmertagger` which can be installed with
+
+```
+pip install khmertagger
+```
+
+```python
+from khmertagger import tagger
+
+output = tagger("ខ្ញុំឈ្មោះថូយប៊ុនឡូឆ្នាំនេះវាត្រូវបានរាយការណ៍ថាបានធ្លាក់ចុះមកត្រឹម២,២ភាគរយ។លោកយ៉ាត់សៀងហៃជាអ្នកធ្វើវាមែនទេ?")
+
+print(output)
+# Result => [
+#   ("ខ្ញុំ", "PRO"),
+#   ("ឈ្មោះ", "NN"),
+#   ("ថូយ", "PN"),
+#   ("ប៊ុន", "PN"),
+#   ("ឡូ", "PN"),
+#   ("ឆ្នាំ", "NN"),
+#   ("នេះ", "DT"),
+#   ("វា", "PRO"),
+#   ("ត្រូវបាន", "VB"),
+#   ("រាយការណ៍", "VB"),
+#   ("ថា", "IN"),
+#   ("បាន", "AUX"),
+#   ("ធ្លាក់", "VB"),
+#   ("ចុះ", "RB"),
+#   ("មក", "IN"),
+#   ("ត្រឹម", "IN"),
+#   ("២,២", "CD"),
+#   ("ភាគរយ", "NN"),
+#   ("។", "KAN"),
+#   ("លោក", "PRO"),
+#   ("យ៉ាត់", "PN"),
+#   ("សៀង", "PN"),
+#   ("ហៃ", "PN"),
+#   ("ជា", "IN"),
+#   ("អ្នកធ្វើ", "NN"),
+#   ("វា", "PRO"),
+#   ("មែន", "RB"),
+#   ("ទេ", "PA"),
+#   ("?", "SYM"),
+# ]
+```
 
 ### Dataset
 

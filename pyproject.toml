@@ -1,0 +1,40 @@
+[project]
+name = "khmertagger"
+description = "Joint Khmer Part-of-Speech Tagger and Word Segmenter"
+version = "0.1.0"
+dependencies = ["onnxruntime"]
+
+license = { file = "LICENSE" }
+readme = "README.md"
+
+classifiers = [
+  'Development Status :: 4 - Beta',
+  'Intended Audience :: Developers',
+  'Topic :: Scientific/Engineering :: Artificial Intelligence',
+  'License :: OSI Approved :: MIT License',
+  'Programming Language :: Python :: 3.8',
+]
+
+[project.urls]
+Homepage = "https://github.com/seanghay/khmer-pos-tagger"
+Repository = "https://github.com/seanghay/khmer-pos-tagger"
+
+[[project.authors]]
+name = "Seanghay Yath"
+email = "seanghay.dev@gmail.com"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["khmertagger"]
+
+[tool.ruff]
+indent-width = 2
+
+[tool.ruff.lint]
+ignore = ["E741"]

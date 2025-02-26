@@ -1,6 +1,6 @@
 import torch
 from model import Tagger
-from config import token2idx, tag2idx, idx2tag
+from config import token2idx, tag2idx
 
 if __name__ == "__main__":
   max_sequence_length = 64
