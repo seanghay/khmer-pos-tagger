@@ -12,8 +12,6 @@ from data import TaggerDataset
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
 
-
-
 def evaluate(model, data_loader, device, criterion, epoch):
   eval_loss = 0
   eval_iteration = 0

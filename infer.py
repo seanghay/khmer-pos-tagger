@@ -34,9 +34,7 @@ if __name__ == "__main__":
   tags = [idx2tag[idx] for idx in tag_ids]
 
   results = []
-
   i = 0
-
   for tag, token in zip(tags, chars):
     if tag.startswith("B-") or i == 0:
       results.append((token, tag[2:]))
