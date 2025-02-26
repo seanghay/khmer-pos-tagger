@@ -2,7 +2,7 @@
 
 An open-source part of speech tagger for Khmer language using BiLSTM.
 
-The model weights can be downloaded in the release page. 
+The model weights can be downloaded in the [release page](https://github.com/seanghay/khmer-pos-tagger/releases/tag/0.1). 
 
 Once downloaded, place the model weight at `ckpt/best.pt`
 
